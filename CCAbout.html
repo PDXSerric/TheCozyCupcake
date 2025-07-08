@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - The Cozy Cupcake</title>
+  <style>
+    /* General Body and HTML Styles */
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #fffafc;
+      color: #333;
+    }
+
+    /* Slideshow Container - Positioned behind the content */
+    .slideshow-container {
+      position: fixed;  /* Fixed position to stay in the background */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;  /* Ensures it is behind all other content */
+      animation: fade 80s infinite; /* Background image fades every 80 seconds */
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Keyframes for fading background images */
+    @keyframes fade {
+      0%, 20% {
+        background-image: url('https://i.imgur.com/19WnaX7.jpeg');
+        opacity: 0.7;
+      }
+      20%, 40% {
+        background-image: url('https://i.imgur.com/JD4zt8B.jpeg');
+        opacity: 0.7;
+      }
+      40%, 60% {
+        background-image: url('https://i.imgur.com/6oyEJuD.jpeg');
+        opacity: 0.7;
+      }
+      60%, 80% {
+        background-image: url('https://i.imgur.com/9eJBciB.jpeg');
+        opacity: 0.7;
+      }
+      80%, 100% {
+        background-image: url('https://i.imgur.com/19WnaX7.jpeg');
+        opacity: 0.7;
+      }
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #ffe6f0;
+      padding: 20px;
+      text-align: center;
+      position: relative; /* Ensure it's the containing block for absolute positioning */
+    }
+
+    /* Add logo to top-left and top-right */
+    .logo-left, .logo-right {
+      position: absolute;
+      top: 10px;
+      width: 200px; /* Set width of logos to 200px */
+      height: 200px; /* Set height of logos to 200px */
+    }
+
+    .logo-left {
+      left: 20px; /* Position logo on the left */
+    }
+
+    .logo-right {
+      right: 20px; /* Position logo on the right */
+    }
+
+    header h1 {
+      color: #d16ba5;
+    }
+
+    /* Navigation Styles */
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #7c4d79;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #c94b9b;
+    }
+
+    /* Main Content Styles */
+    main {
+      padding: 20px;
+      position: relative;
+      z-index: 1;  /* Ensure content is above the background */
+      max-width: 1200px;
+      margin: 0 auto;  /* Center content */
+    }
+
+    /* Section Styles */
+    section {
+      margin: 30px 0;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #ffe6f0;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #555;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Scrolling Slideshow Styles */
+    .scrolling-slideshow-wrapper {
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      bottom: 0;
+      padding: 20px 0;
+      background-color: #f8f8f8;
+    }
+
+    .scrolling-slideshow {
+      display: flex; /* Using flexbox for the slideshow to scroll horizontally */
+      white-space: nowrap;
+      animation: scroll-left 60s linear infinite; /* Continuous scroll for 60 seconds */
+    }
+
+    .scrolling-slideshow img {
+      width: 400px;
+      height: 400px;
+      margin-right: 20px;
+      display: inline-block;
+    }
+
+    /* Keyframes for continuous scrolling */
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%); /* Moves all images to the left */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slideshow Container (Background) -->
+  <div class="slideshow-container"></div>
+
+  <!-- Header (Content) -->
+  <header>
+    <!-- Logo on the left -->
+    <img src="https://i.imgur.com/jJQApD1.png" alt="The Cozy Cupcake Logo" class="logo-left">
+    
+    <h1>About The Cozy Cupcake</h1>
+    
+    <!-- Logo on the right -->
+    <img src="https://i.imgur.com/jJQApD1.png" alt="The Cozy Cupcake Logo" class="logo-right">
+    
+    <nav>
+      <a href="#about">About Us</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="about">
+      <h2>Our Story</h2>
+      <p>The Cozy Cupcake began with two friends, Gemma and Brittany, who bonded over their shared love of baking. What started as a casual hobby of creating delicious cupcakes quickly turned into something more. The two spent countless hours experimenting with flavors, decorating designs, and perfecting their recipes. As their passion for baking grew, so did their dream of sharing their creations with the world.</p>
+      <p>What began with just cupcakes soon expanded into an array of sweet treats. From cakes for every occasion to freshly baked pastries and melt-in-your-mouth cookies, The Cozy Cupcake blossomed into a bakery that offers something for everyone. With each new creation, Gemma and Brittany bring their love of baking to life, always striving to deliver the most delicious and beautiful desserts. What started as a simple friendship has grown into a thriving business, fueled by their passion for crafting the perfect baked goods to share with others.</p>
+    </section>
+  </main>
+
+  <!-- Scrolling Slideshow Below the Footer -->
+  <div class="scrolling-slideshow-wrapper">
+    <div class="scrolling-slideshow">
+      <img src="https://i.imgur.com/6oyEJuD.jpeg" alt="Cupcakes 1">
+      <img src="https://i.imgur.com/CmvNXEL.jpeg" alt="Cupcakes 2">
+      <img src="https://i.imgur.com/DTiT67Y.jpeg" alt="Cupcakes 3">
+	<img src="https://i.imgur.com/f4w8WW7.jpeg" alt="Gemma">
+      <img src="https://i.imgur.com/19WnaX7.jpeg" alt="Cupcakes 4">
+      <img src="https://i.imgur.com/JD4zt8B.jpeg" alt="Cupcakes 5">
+	<img src="https://i.imgur.com/Dqb6SSL.jpeg" alt="Brittany">
+      <img src="https://i.imgur.com/9eJBciB.jpeg" alt="Cupcakes 6">
+      <img src="https://i.imgur.com/K0OhgxL.jpeg" alt="Cupcakes 7">
+      <img src="https://i.imgur.com/JvMSUVa.jpeg" alt="Cupcakes 8">
+      <img src="https://i.imgur.com/d8bJlg1.jpeg" alt="Cupcakes 9">
+      <img src="https://i.imgur.com/w0B2L1c.jpeg" alt="Cupcakes 10">
+      <img src="https://i.imgur.com/fQHhYxK.jpeg" alt="Cupcakes 11">
+	<img src="https://i.imgur.com/fhGGwQ1.jpeg" alt="Friends">
+    </div>
+  </div>
+
+  <!-- Footer (Content) Below the Slideshow -->
+  <footer>
+    <p>&copy; 2025 The Cozy Cupcake</p>
+  </footer>
+
+</body>
+</html>

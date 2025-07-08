@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - The Cozy Cupcake</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #fffafc;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffe6f0;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      color: #d16ba5;
+      margin: 0;
+    }
+
+    .logo-left, .logo-right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .logo-left {
+      left: 20px;
+    }
+
+    .logo-right {
+      right: 20px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #7c4d79;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #c94b9b;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin: 30px 0;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+    }
+
+    .socials a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #d16ba5;
+      font-weight: bold;
+    }
+
+    .socials a:hover {
+      color: #c94b9b;
+    }
+
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    form label {
+      font-weight: bold;
+    }
+
+    form button {
+      background-color: #d16ba5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #c94b9b;
+    }
+
+    footer {
+      background-color: #ffe6f0;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://i.imgur.com/jJQApD1.png" alt="Left Logo" class="logo-left">
+    <h1>Contact The Cozy Cupcake</h1>
+    <img src="https://i.imgur.com/jJQApD1.png" alt="Right Logo" class="logo-right">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="specials.html">Specials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-info">
+      <h2>Visit or Contact Us</h2>
+      <p><strong>Email:</strong> contact@cozycupcake.com</p>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Address:</strong> 123 Cupcake Lane, Sweetville, CA 90001</p>
+    </section>
+
+    <section class="socials">
+      <h2>Follow Us</h2>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Imgur</a>
+      <a href="#">Pinterest</a>
+      <a href="#">TikTok</a>
+    </section>
+
+    <section class="guestbook">
+      <h2>Sign Our Guestbook</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+
+        <label for="experience">How was your experience?</label>
+        <textarea id="experience" name="experience" rows="4" placeholder="Leave a sweet message..."></textarea>
+
+        <label for="rating">Rating</label>
+        <select id="rating" name="rating">
+          <option value="5">⭐⭐⭐⭐⭐ - Amazing</option>
+          <option value="4">⭐⭐⭐⭐ - Great</option>
+          <option value="3">⭐⭐⭐ - Good</option>
+          <option value="2">⭐⭐ - Okay</option>
+          <option value="1">⭐ - Needs work</option>
+        </select>
+
+        <label for="image">Upload a Photo</label>
+        <input type="file" id="image" name="image" accept="image/*">
+
+        <button type="submit">Submit Entry</button>
+      </form>
+    </section>
+
+    <section class="map">
+      <h2>Find Us on the Map</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.12345!2d-122.419416!3d37.774929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzMwLjgiTiAxMjLCsDI1JzA2LjkiVw!5e0!3m2!1sen!2sus!4v1617763741729" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Cozy Cupcake</p>
+  </footer>
+
+</body>
+</html>

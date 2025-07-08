@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Cozy Cupcake</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      font-family: 'Pacifico', cursive;
+      color: #4d2c2c;
+      background-color: #f4c6c8;
+      background-image: url('https://i.imgur.com/pBlqBwV.png');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: repeat;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffccd9;
+    }
+
+    h1, h2 {
+      font-family: 'Pacifico', cursive;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #b45f06;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main-gallery {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .main-gallery img {
+      height: 260px;
+      width: 260px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 50%;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .main-gallery img:hover {
+      transform: scale(1.08);
+    }
+
+    section {
+      background-color: transparent;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px 20px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: none;
+    }
+
+    .slider-bar-container {
+      overflow: hidden;
+      width: 100%;
+      background-color: transparent;
+      margin-top: 40px;
+    }
+
+    .slider-bar {
+      display: flex;
+      gap: 20px;
+      animation: scrollSlider 60s linear infinite;
+    }
+
+    .slider-bar img {
+      height: 160px;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+
+    @keyframes scrollSlider {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffccd9;
+      font-family: 'Pacifico', cursive;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Cozy Cupcake</h1>
+	<h2>Welcome to The Cozy Cupcake! A boutique bakery that blends sweet delights with warm moments.</h2>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main-gallery">
+      <img src="https://i.imgur.com/f4w8WW7.jpeg" alt="Gemma">
+      <img src="https://i.imgur.com/EALiRbw.png" alt="Cuppy">
+      <img src="https://i.imgur.com/Dqb6SSL.jpeg" alt="Brittany">
+    </section>
+
+<br>
+  <br>
+     <br>    
+
+
+  </main>
+
+  <div class="slider-bar-container">
+    <div class="slider-bar">
+      <!-- Image set duplicated for looping -->
+      <img src="https://i.imgur.com/fhGGwQ1.jpeg">
+      <img src="https://i.imgur.com/WjtCLgt.jpeg">
+      <img src="https://i.imgur.com/yTvRamK.png">
+      <img src="https://i.imgur.com/CEDMLqU.png">
+      <img src="https://i.imgur.com/p3YSVtq.png">
+      <img src="https://i.imgur.com/b4aD0Dp.jpeg">
+      <img src="https://i.imgur.com/CCy4K1n.png">
+      <img src="https://i.imgur.com/K32JAKf.jpeg">
+      <img src="https://i.imgur.com/CVKRSrF.png">
+      <img src="https://i.imgur.com/60xxwAH.png">
+      <img src="https://i.imgur.com/dLt41uF.png">
+      <img src="https://i.imgur.com/jdvXsCh.png">
+
+      <!-- Duplicate for seamless animation -->
+      <img src="https://i.imgur.com/fhGGwQ1.jpeg">
+      <img src="https://i.imgur.com/WjtCLgt.jpeg">
+      <img src="https://i.imgur.com/yTvRamK.png">
+      <img src="https://i.imgur.com/CEDMLqU.png">
+      <img src="https://i.imgur.com/p3YSVtq.png">
+      <img src="https://i.imgur.com/b4aD0Dp.jpeg">
+      <img src="https://i.imgur.com/CCy4K1n.png">
+      <img src="https://i.imgur.com/K32JAKf.jpeg">
+      <img src="https://i.imgur.com/CVKRSrF.png">
+      <img src="https://i.imgur.com/60xxwAH.png">
+      <img src="https://i.imgur.com/dLt41uF.png">
+      <img src="https://i.imgur.com/jdvXsCh.png">
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 The Cozy Cupcake</p>
+  </footer>
+
+</body>
+</html>
